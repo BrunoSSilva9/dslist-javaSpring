@@ -13,7 +13,7 @@ import com.ogarotodevback.dslist.repositories.GameRepository;
 public class GameService {
 	
 	@Autowired
-	private GameRepository gameRepository; //chama o componente 
+	private GameRepository gameRepository; //chama o componente que acessa os dados
 	
 	//metodo que faz uma consulta no banco de dados e retorna todos os games
 	

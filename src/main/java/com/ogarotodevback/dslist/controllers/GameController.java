@@ -12,10 +12,10 @@ import com.ogarotodevback.dslist.entities.Game;
 import com.ogarotodevback.dslist.services.GameService;
 
 @RestController
-@RequestMapping(value = "/games") // define o camino na api a ser chamado no navegador
+@RequestMapping(value = "/games") // define o caminho/rota na api a ser chamado no navegador
 public class GameController {
 
-	// camada controller injeta o service que por sua vez injeta o repository/camada
+	// camada controller injeta o componente service que por sua vez injeta o repository/camada
 	// de dados
 
 	@Autowired

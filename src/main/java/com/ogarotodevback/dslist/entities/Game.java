@@ -19,7 +19,7 @@ public class Game {
 	private Long id; 
 	private String title;
 	
-	@Column(name = "game_year") //para renomear o atributo 'year', pois a palavra e reservada o SQL
+	@Column(name = "game_year") //para renomear o atributo 'year', pois a palavra e reservada no SQL
 	private Integer year;
 	private String genre;
 	private String platforms;
