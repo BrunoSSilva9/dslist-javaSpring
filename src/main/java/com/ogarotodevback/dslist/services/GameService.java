@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.ogarotodevback.dslist.dto.GameDTO;
 import com.ogarotodevback.dslist.dto.GameMinDTO;
 import com.ogarotodevback.dslist.entities.Game;
+import com.ogarotodevback.dslist.projections.GameMinProjection;
 import com.ogarotodevback.dslist.repositories.GameRepository;
 
 import jakarta.transaction.Transactional;
@@ -33,5 +34,11 @@ public class GameService {
 	}
 	
 	
+	//retorna os games de uma lista unica
+	public List<GameMinDTO> findByList(Long listId) {
+		List<GameMinProjection> result = gameRepository.searchByList(listId);
+		return result.stream().map(x -> new GameMinDTO(x)).toList();
+		
+	}
 
 }

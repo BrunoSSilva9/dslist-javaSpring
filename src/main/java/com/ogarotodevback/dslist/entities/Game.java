@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity //configura a classe para que seja equivalente a uma tabela no banco de dados 
-@Table(name = "dev_game") //customizar o nome da tabela
+@Table(name = "tb_game") //customizar o nome da tabela
 
 public class Game {
 	
